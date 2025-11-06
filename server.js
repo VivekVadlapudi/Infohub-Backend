@@ -7,12 +7,15 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
 app.use(cors({
-  origin: "https://info-hub-frontend-red.vercel.app/",
+  origin: [
+    "https://info-hub-frontend-red.vercel.app",
+    "https://info-hub-frontend-wdti.vercel.app"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
 app.use(express.json());
 
 // ========== QUOTE API ==========
