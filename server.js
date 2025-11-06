@@ -10,7 +10,9 @@ const PORT = process.env.PORT || 3001;
 app.use(cors({
   origin: [
     "https://info-hub-frontend-red.vercel.app",
-    "https://info-hub-frontend-wdti.vercel.app"
+    "https://info-hub-frontend-wdti.vercel.app",
+    'https://info-hub-frontend-6uzkdvzu2-vivekvadlapudi831-5596s-projects.vercel.app/',
+    'https://info-hub-frontend-git-main-vivekvadlapudi831-5596s-projects.vercel.app/'
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
